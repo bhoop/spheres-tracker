@@ -27,15 +27,17 @@ function Scoreboard({ state }) {
     );
     const oilCount = getPlayerOilCount(player, state.control);
     const production = getPlayerProduction(player, state.control);
+    const numSpheres = getPlayerSphereCount(player, state.control);
     return {
       team: getTeam(player),
-      numSpheres: getPlayerSphereCount(player, state.control),
+      numSpheres,
       numCapitals,
       numStartingCapitals,
       numOil: oilCount,
       production,
       numTurns: 2 + oilCount,
-      numUnits: getUnitsPerProduction(production) + numStartingCapitals
+      numUnits:
+        getUnitsPerProduction(production) + numSpheres + numStartingCapitals
     };
   });
   players.sort(
