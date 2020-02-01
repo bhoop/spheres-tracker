@@ -1,0 +1,468 @@
+[
+  {
+    "name": "Alaska",
+    "production": 1,
+    "hasOil": true,
+    "sphere": "Ottawa"
+  },
+  {
+    "name": "Northwest Territories",
+    "production": 1,
+    "hasCard": true,
+    "sphere": "Ottawa"
+  },
+  {
+    "name": "Alberta",
+    "production": 1,
+    "hasOil": true,
+    "sphere": "Ottawa"
+  },
+  {
+    "name": "Quebec",
+    "production": 2,
+    "hasCapital": true,
+    "sphere": "Ottawa"
+  },
+  {
+    "name": "Northwest",
+    "production": 1,
+    "hasCard": true,
+    "sphere": "Washington"
+  },
+  {
+    "name": "Great Lakes",
+    "production": 3,
+    "sphere": "Washington"
+  },
+  {
+    "name": "East Coast",
+    "production": 2,
+    "hasCapital": true,
+    "sphere": "Washington"
+  },
+  {
+    "name": "South West",
+    "production": 2,
+    "hasOil": true,
+    "sphere": "Washington"
+  },
+  {
+    "name": "West Coast",
+    "production": 3,
+    "sphere": "Washington"
+  },
+  {
+    "name": "Mexico",
+    "production": 3,
+    "hasOil": true,
+    "hasCapital": true,
+    "sphere": "Mexico City"
+  },
+  {
+    "name": "Panama",
+    "production": 1,
+    "hasCard": true,
+    "sphere": "Mexico City"
+  },
+  {
+    "name": "Cuba",
+    "production": 1,
+    "hasCard": true,
+    "sphere": "Mexico City"
+  },
+  {
+    "name": "Colombia",
+    "production": 1,
+    "sphere": "Mexico City"
+  },
+  {
+    "name": "Venezuela",
+    "production": 1,
+    "hasOil": true,
+    "sphere": "Mexico City"
+  },
+  {
+    "name": "Peru",
+    "production": 1,
+    "sphere": "Brasilia"
+  },
+  {
+    "name": "Brazil",
+    "production": 4,
+    "hasOil": true,
+    "hasCapital": true,
+    "sphere": "Brasilia"
+  },
+  {
+    "name": "Argentina",
+    "production": 1,
+    "hasCard": true,
+    "sphere": "Brasilia"
+  },
+  {
+    "name": "South Africa",
+    "production": 2,
+    "hasCapital": true,
+    "sphere": "Pretoria"
+  },
+  {
+    "name": "Madagascar",
+    "production": 1,
+    "hasCard": true,
+    "sphere": "Pretoria"
+  },
+  {
+    "name": "Mozambique",
+    "production": 1,
+    "hasCard": true,
+    "sphere": "Pretoria"
+  },
+  {
+    "name": "Angola",
+    "production": 1,
+    "hasOil": true,
+    "sphere": "Pretoria"
+  },
+  {
+    "name": "Ethiopia",
+    "production": 1,
+    "sphere": "Pretoria"
+  },
+  {
+    "name": "Congo",
+    "production": 1,
+    "hasCard": true,
+    "sphere": "Abuja"
+  },
+  {
+    "name": "Nigeria",
+    "production": 2,
+    "hasOil": true,
+    "hasCapital": true,
+    "sphere": "Abuja"
+  },
+  {
+    "name": "Ivory Coast",
+    "production": 1,
+    "sphere": "Abuja"
+  },
+  {
+    "name": "Morocco",
+    "production": 1,
+    "hasCard": true,
+    "sphere": "Cairo"
+  },
+  {
+    "name": "Algeria",
+    "production": 1,
+    "hasOil": true,
+    "sphere": "Cairo"
+  },
+  {
+    "name": "Libya",
+    "production": 1,
+    "hasOil": true,
+    "sphere": "Cairo"
+  },
+  {
+    "name": "Egypt",
+    "production": 2,
+    "hasCapital": true,
+    "sphere": "Cairo"
+  },
+  {
+    "name": "Turkey",
+    "production": 2,
+    "hasCapital": true,
+    "sphere": "Ankara"
+  },
+  {
+    "name": "Italy",
+    "production": 3,
+    "sphere": "Ankara"
+  },
+  {
+    "name": "Greece",
+    "production": 2,
+    "hasCard": true,
+    "sphere": "Ankara"
+  },
+  {
+    "name": "Caucasus",
+    "production": 1,
+    "sphere": "Ankara"
+  },
+  {
+    "name": "Israel",
+    "production": 2,
+    "hasCard": true,
+    "sphere": "Riyadh"
+  },
+  {
+    "name": "Saudi Arabia",
+    "production": 2,
+    "hasOil": true,
+    "hasCapital": true,
+    "sphere": "Riyadh"
+  },
+  {
+    "name": "Yemen",
+    "production": 1,
+    "sphere": "Riyadh"
+  },
+  {
+    "name": "Oman",
+    "production": 1,
+    "hasCard": true,
+    "sphere": "Riyadh"
+  },
+  {
+    "name": "Spain",
+    "production": 2,
+    "hasCard": true,
+    "sphere": "Berlin"
+  },
+  {
+    "name": "France",
+    "production": 3,
+    "sphere": "Berlin"
+  },
+  {
+    "name": "Germany",
+    "production": 4,
+    "hasCapital": true,
+    "sphere": "Berlin"
+  },
+  {
+    "name": "Austria",
+    "production": 2,
+    "sphere": "Berlin"
+  },
+  {
+    "name": "UK",
+    "production": 4,
+    "hasCapital": true,
+    "sphere": "London"
+  },
+  {
+    "name": "Iceland",
+    "production": 1,
+    "hasCard": true,
+    "sphere": "London"
+  },
+  {
+    "name": "Scandinavia",
+    "production": 2,
+    "hasOil": true,
+    "sphere": "London"
+  },
+  {
+    "name": "Finland",
+    "production": 1,
+    "hasCard": true,
+    "sphere": "London"
+  },
+  {
+    "name": "Belarus",
+    "production": 1,
+    "sphere": "Warsaw"
+  },
+  {
+    "name": "Poland",
+    "production": 2,
+    "hasCapital": true,
+    "sphere": "Warsaw"
+  },
+  {
+    "name": "Ukraine",
+    "production": 2,
+    "hasCard": true,
+    "sphere": "Warsaw"
+  },
+  {
+    "name": "Romania",
+    "production": 1,
+    "hasOil": true,
+    "sphere": "Warsaw"
+  },
+  {
+    "name": "Central",
+    "production": 4,
+    "hasCapital": true,
+    "sphere": "Moscow"
+  },
+  {
+    "name": "Volga",
+    "production": 2,
+    "hasOil": true,
+    "sphere": "Moscow"
+  },
+  {
+    "name": "Urals",
+    "production": 1,
+    "sphere": "Moscow"
+  },
+  {
+    "name": "Siberia",
+    "production": 1,
+    "hasCard": true,
+    "sphere": "Moscow"
+  },
+  {
+    "name": "Far East",
+    "production": 1,
+    "hasOil": true,
+    "sphere": "Moscow"
+  },
+  {
+    "name": "Kazakhstan",
+    "production": 1,
+    "hasOil": true,
+    "hasCapital": true,
+    "sphere": "Astana"
+  },
+  {
+    "name": "Uzbekistan",
+    "production": 1,
+    "sphere": "Astana"
+  },
+  {
+    "name": "Turkmenistan",
+    "production": 1,
+    "hasCard": true,
+    "sphere": "Astana"
+  },
+  {
+    "name": "Iran",
+    "production": 2,
+    "hasOil": true,
+    "hasCapital": true,
+    "sphere": "Tehran"
+  },
+  {
+    "name": "Iraq",
+    "production": 1,
+    "hasOil": true,
+    "sphere": "Tehran"
+  },
+  {
+    "name": "Syria",
+    "production": 1,
+    "sphere": "Tehran"
+  },
+  {
+    "name": "Afghanistan",
+    "production": 1,
+    "hasCard": true,
+    "sphere": "Tehran"
+  },
+  {
+    "name": "Pakistan",
+    "production": 2,
+    "sphere": "Tehran"
+  },
+  {
+    "name": "Zhongyuan",
+    "production": 6,
+    "hasCapital": true,
+    "sphere": "Beijing"
+  },
+  {
+    "name": "Tibet",
+    "production": 1,
+    "hasOil": true,
+    "sphere": "Beijing"
+  },
+  {
+    "name": "Manchuria",
+    "production": 2,
+    "sphere": "Beijing"
+  },
+  {
+    "name": "North Korea",
+    "production": 1,
+    "hasCard": true,
+    "sphere": "Beijing"
+  },
+  {
+    "name": "Lingnan",
+    "production": 3,
+    "sphere": "Beijing"
+  },
+  {
+    "name": "Japan",
+    "production": 5,
+    "hasCapital": true,
+    "sphere": "Tokyo"
+  },
+  {
+    "name": "South Korea",
+    "production": 3,
+    "sphere": "Tokyo"
+  },
+  {
+    "name": "Taiwan",
+    "production": 2,
+    "hasCard": true,
+    "sphere": "Tokyo"
+  },
+  {
+    "name": "India",
+    "production": 7,
+    "hasCapital": true,
+    "sphere": "New Delhi"
+  },
+  {
+    "name": "Burma",
+    "production": 2,
+    "sphere": "New Delhi"
+  },
+  {
+    "name": "Thailand",
+    "production": 1,
+    "sphere": "New Delhi"
+  },
+  {
+    "name": "Indonesia",
+    "production": 2,
+    "hasOil": true,
+    "hasCapital": true,
+    "sphere": "Jakarta"
+  },
+  {
+    "name": "Vietnam",
+    "production": 2,
+    "hasOil": true,
+    "sphere": "Jakarta"
+  },
+  {
+    "name": "Philippines",
+    "production": 1,
+    "hasCard": true,
+    "sphere": "Jakarta"
+  },
+  {
+    "name": "New Guinea",
+    "production": 1,
+    "hasCard": true,
+    "sphere": "Jakarta"
+  },
+  {
+    "name": "New South Wales",
+    "production": 3,
+    "hasCapital": true,
+    "sphere": "Canberra"
+  },
+  {
+    "name": "Western Australia",
+    "production": 1,
+    "hasOil": true,
+    "sphere": "Canberra"
+  },
+  {
+    "name": "New Zealand",
+    "production": 1,
+    "hasCard": true,
+    "sphere": "Canberra"
+  }
+]

@@ -1,38 +1,226 @@
-.App {
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: "Inter", sans-serif;
+  background: #000;
+}
+body {
+  margin: 0;
+}
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+.Scoreboard {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+.Scoreboard__player {
+  width: 100px;
+  position: relative;
+  padding: 10px;
+}
+.Scoreboard__player::before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: currentColor;
+  opacity: 0.1;
+}
+.ScoreboardPlayer__rank {
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  color: #ddd;
+  font-weight: 600;
+  font-size: 20px;
+  transform: translateX(-50%);
+  padding-bottom: 5px;
+}
+.ScoreboardPlayer__rank::before {
+  content: "#";
+  color: #555;
+  font-size: 12px;
+  font-weight: 800;
+  position: absolute;
+  top: 0;
+  right: 100%;
+}
+.ScoreboardPlayer__image {
+  max-width: 100%;
+  display: block;
+}
+.ScoreboardPlayer__stats {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  padding: 10px 5px;
+}
+.ScoreboardStat {
+}
+.ScoreboardStat__label {
+  font-size: 9px;
+  color: #aaa;
+  font-weight: 700;
+}
+.ScoreboardStat__value {
+  color: #fff;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Board {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.SphereList {
+  margin: 0 15px 15px 0;
+  cursor: pointer;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.SphereList__territory {
+  margin-bottom: 5px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 26px 5px 5px 26px;
+  /* border: 2px solid transparent; */
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.SphereList__control {
+  width: 26px;
+  height: 26px;
+  padding: 2px;
+  border-radius: 50%;
+  position: relative;
+  background: #000;
+  margin-left: -2px;
+}
+.SphereList__control::before {
+  content: " ";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: currentColor;
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.SphereList__territory-name {
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 11px;
+  color: #eee;
+}
+.SphereList__production {
+  width: 20px;
+  text-align: center;
+}
+.SphereList__capital-icon {
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+}
+.SphereList__territory[is-capital] .SphereList__capital-icon {
+  background-image: url(./images/icon-capital.png);
+}
+.SphereList__bonus-icon {
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+}
+.SphereList__territory[has-oil] .SphereList__bonus-icon {
+  background-image: url(./images/icon-oil.png);
+}
+.SphereList__territory[has-card] .SphereList__bonus-icon {
+  background-image: url(./images/icon-card.png);
+}
+.SphereList__cube {
+  --size: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.CubeSprite {
+  width: var(--size);
+  height: var(--size);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -1px 0 0 0;
+  transform: translate(-50%, -50%);
+
+  perspective: calc(var(--size) * 4);
+}
+.CubeSprite__cube {
+  position: relative;
+  width: inherit;
+  height: inherit;
+
+  transform-style: preserve-3d;
+  transform: rotateY(45deg) rotateX(-50deg);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.CubeSprite__face {
+  --rx: 0;
+  --ry: 0;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  background: currentColor;
+  transform: rotateX(var(--rx)) rotateY(var(--ry))
+    translate3d(0, 0, calc(var(--size) / 2));
+  filter: brightness(0.8);
+}
+.CubeSprite__face--front {
+}
+.CubeSprite__face--back {
+  --ry: 180deg;
+}
+.CubeSprite__face--left {
+  filter: brightness(1);
+  --ry: -90deg;
+}
+.CubeSprite__face--right {
+  --ry: 90deg;
+}
+.CubeSprite__face--top {
+  filter: brightness(1.2);
+  --rx: 90deg;
+}
+.CubeSprite__face--bottom {
+  --rx: -90deg;
+}
+
+.Phase {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tpop {
+  text-align: center;
+}
+.tpop__teams {
+  display: flex;
+  justify-content: space-evenly;
+}
+.tpop__team {
+  width: 100px;
+  cursor: pointer;
+}
+.tpop__team[data-status="off"] {
+  transform: scale(0.8);
+  opacity: 0.5;
+}
+.tpop__team[data-status="off"]:hover {
+  transform: scale(0.9);
+  opacity: 0.75;
+}
+.tpop__team[data-status="on"]:hover {
+  transform: scale(0.9);
+  opacity: 0.75;
 }
